@@ -18,10 +18,30 @@
 	padding: 0;
 }
 
+/* Global */
 html {
 	background-color: var(--clr-lotion);
 	font-family: "Red Hat Mono", monospace;
 	color: var(--clr-black-olive);
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.main-container {
+	background-color: var(--clr-white);
+	border-radius: 20px;
+	display: grid;
+	width: 80%;
+	margin-inline: auto;
+	margin-block: 2rem;
+	padding: 1rem 2rem;
+}
+
+label {
+	display: inline-block;
 }
 
 /* NavBar Styles */
@@ -148,4 +168,109 @@ nav {
 	padding: 6px;
 	background-color: var(--clr-dark-pink);
 	margin-top: 1rem;
+}
+
+/* Form 'Add a trainer' */
+input {
+	accent-color: var(--clr-dark-pink);
+}
+
+.add-trainer-form {
+	display: flex;
+	gap: 1.5rem;
+	margin-top: 2.5rem;
+}
+
+.image-upload-container {
+	background-color: var(--clr-lotion);
+	border-radius: 20px;
+	padding: 1rem;
+	margin-bottom: 2.5rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.form-label {
+	font-weight: 600;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+label:has(input[type="radio"]),
+label:has(input[type="checkbox"]) {
+	padding-block: 0.2rem;
+	padding-inline-end: 0.3rem;
+}
+
+input[type="text"] {
+	border: none;
+	background-color: var(--clr-lotion);
+	border-radius: 5px;
+	padding: 0.5rem 0.6rem;
+	width: 220px;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active,
+input[type="text"]:focus-visible,
+input[type="text"]:focus-within {
+	outline: none;
+	border: var(--clr-dark-pink) 1px solid;
+}
+
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="radio"]:focus-visible,
+input[type="radio"]:focus-within,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active,
+input[type="checkbox"]:focus-visible,
+input[type="checkbox"]:focus-within {
+	outline: var(--clr-dark-pink) 1px solid;
+}
+
+.btn-add-new {
+	background-color: transparent;
+	border: none;
+	font-family: inherit;
+	font-weight: 700;
+	text-decoration: underline;
+	color: var(--clr-dark-pink);
+	display: flex;
+	gap: 0.3rem;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	padding: 0.2rem;
+}
+
+.btn-submit {
+	background-color: var(--clr-dark-pink);
+	border-radius: 100vh;
+	color: var(--clr-white);
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 1.3rem;
+	border: none;
+	padding: 0.6rem 2rem;
+	display: block;
+	margin-top: 3rem;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.btn-add-new:focus,
+.btn-submit:focus {
+	outline: var(--clr-dark-pink) solid 1px;
+	outline-offset: 3px;
+	border-radius: 100vh;
 }
