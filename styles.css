@@ -321,3 +321,31 @@ input[type="checkbox"]:focus-within {
 	align-items: center;
 	gap: 1rem;
 }
+
+/* 404 page Styles */
+.error-pageNotFound {
+	font-size: 2.25rem;
+	font-weight: 600;
+	text-align: center;
+	margin-block: 5rem;
+}
+
+.clr-dark-pink {
+	color: var(--clr-dark-pink);
+}
+
+.btn-default {
+	text-decoration: none;
+	width: fit-content;
+	background-color: var(--clr-dark-pink);
+	border-radius: 100vh;
+	color: var(--clr-white);
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 1.3rem;
+	margin-inline: auto;
+	padding: 0.6rem 2rem;
+	display: block;
+	margin-top: 3rem;
+	cursor: pointer;
+}
