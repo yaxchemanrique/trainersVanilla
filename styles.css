@@ -170,6 +170,13 @@ nav {
 	margin-top: 1rem;
 }
 
+/* CARD Grid Styles */
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2.25rem;
+}
+
 /* Form 'Add a trainer' */
 input {
 	accent-color: var(--clr-dark-pink);
