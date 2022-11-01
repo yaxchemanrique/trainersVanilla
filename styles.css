@@ -42,7 +42,13 @@ h1 {
 
 .container-80 {
 	width: 80%;
+	max-width: 1200px;
 	margin-inline: auto;
+}
+
+.flex-container-row {
+	display: flex;
+	gap: 6.25rem;
 }
 
 label {
@@ -348,4 +354,35 @@ input[type="checkbox"]:focus-within {
 	display: block;
 	margin-top: 3rem;
 	cursor: pointer;
+}
+/* Trainer Page */
+.right {
+	display: flex;
+	flex-direction: column;
+	gap: 5.625rem;
+}
+
+.right h2 {
+	font-size: 2.25rem;
+}
+
+.trainer-tags-container {
+	display: flex;
+	gap: 1rem;
+}
+
+.trainer-title h1 {
+	font-size: 8.625rem;
+}
+
+.team-container,
+.information-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+}
+
+.team-container > .team-members {
+	justify-content: flex-start;
+	gap: 1.875rem;
 }
